@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>百谷虎缝合怪搜索，互联网的历史</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- 要做就做全了，用JS实现真正搜索功能！ -->
+    <!-- 当然是用百度工具人了~获取输入框内容后拼接链接，在新窗口打开百度页面 -->
+    <script type="text/javascript">
+    function formSubmit() {
+        var searchValue = document.getElementById("search-box").value; // 获取搜索框内容
+        var a = document.createElement('a'); // 创建一个超链接a标签,按钮submit时，触发点击链接动作
+        var href = "https://www.baidu.com/s?word=" + searchValue; // 百度搜索需要打开的完整链接
+        a.setAttribute('href', href); // 为超链接添加href属性;
+        a.setAttribute('target', '_blank'); // 点击超链接时打开新的页面;
+        a.setAttribute('id', 'myLink'); // 为超链接添加id
+        if (document.getElementById("myLink")) { // 防止重复添加，如果页面中已经存在相同id的超链接，则删除
+            document.body.removeChild(document.getElementById("myLink"));
+        }
+        document.body.appendChild(a); // 把创建的超链接添加到页面
+        a.click(); // 模拟触发点击超链接的click动作	
+    }
+    </script>
+</head>
+
+<body>
+    <div id="nav-left">
+        <a href="https://news.baidu.com/" target="_blank">🔥新闻</a>
+        <a href="https://www.hao123.com/" target="_blank">hao123</a>
+        <a href="https://map.baidu.com/" target="_blank">地图</a>
+        <a href="https://haokan.baidu.com/" target="_blank">视频</a>
+        <a href="https://tieba.baidu.com/" target="_blank">贴吧</a>
+        <a href="https://xueshu.baidu.com/" target="_blank">学术</a>
+        <a href="https://www.baidu.com/more/" target="_blank">更多</a>
+    </div>
+    <div id="nav-right">
+        <a href="https://www.baidu.com/s?wd=%E9%AB%98%E8%80%83" style="color: #f63051" target="_blank">高考加油</a>
+        <!--今日天气，来自天气网www.tianqi.com-->
+        <iframe frameborder="0" scrolling="no" hspace="0" height="19px" src="https://i.tianqi.com/?c=code&a=getcode&id=34&h=25&w=280"></iframe>
+        <a href="https://www.baidu.com/gaoji/preferences.html" target="_blank">设置</a>
+        <a href="https://passport.baidu.com/" target="_blank">登录</a>
+    </div>
+    <center>
+        <div id="search-wrapper">
+            <img src=".\img\baigoohoo.png" width="500px">
+            <br><br>
+            <form>
+                <!--input使用autofocus自动聚焦，使用required禁止提交空字段-->
+                <input type="text" name="search-bar" id="search-box" placeholder="百谷虎一下，你就知道" autofocus="autofocus" required />
+                <button onclick="formSubmit()">百谷虎搜索</button>
+            </form>
+        </div>
+        <iframe vapace="0" hspace="0" scrolling="no" frameborder="0" width="600" height="179" src="https://top.baidu.com/clip?b=1&col=2&hd_h=1"></iframe>
+        <br>
+        <i>👆若风云榜加载失败，请关闭Adblock重试！</i>
+        <div id="about">
+            <a href="https://www.baidu.com/cache/sethelp/index.html" target="_blank">设为首页</a>
+            <a href="https://baike.baidu.com/item/%E7%99%BE%E8%B0%B7%E8%99%8E" target="_blank">关于百谷虎</a>
+            <a href="https://home.baidu.com/" target="_blank">关于百度</a>
+            <a href="http://ir.baidu.com/" target="_blank">About Baidu</a>
+        </div>
+        </br>
+        <div id="copyright">
+            <!--My copyright-2020.7.21 20:04, RuichuangStudy ing-->
+            ©2020 <a href="https://worldline.top" target="_blank">18JK2ZMH</a> &nbsp<a href="https://www.baidu.com/duty/" target="_blank">使用百度前必读 </a>
+            <a href="https://jianyi.baidu.com/" target="_blank">意见反馈 </a>&nbsp京ICP证030173号
+            </a>
+        </div>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+/*导航栏*/
+#nav-left {
+    font-size: 13px;
+    float: right;
+    font: 13px 'PingFang SC', Arial, 'Microsoft YaHei', sans-serif;
+    position: absolute;
+    top: 22px;
+    left: 24px;
+}
+
+#nav-left a {
+    color: black;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+#nav-left a:hover {
+    color: #0000FF;
+}
+
+#nav-right {
+    font-size: 13px;
+    float: right;
+    font: 13px 'PingFang SC', Arial, 'Microsoft YaHei', sans-serif;
+    position: absolute;
+    top: 22px;
+    right: 24px;
+}
+
+#nav-right a {
+    color: black;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+#nav-right a:hover {
+    color: #0000FF;
+}
+
+/*输入栏*/
+#search-box,
+#search-wrapper {
+    position: relative;
+    padding: 10px;
+}
+
+#search-wrapper {
+    width: 650px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+#search-box {
+    width: 80%;
+    border: 1px solid #ccc;
+    outline: 0;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#search-box:focus {
+    box-shadow: 0 0 15px 5px #b0e0ee;
+    border: 1px solid #4e6ef2;
+}
+
+/*搜索按钮和输入栏*/
+button {
+    width: 100px;
+    height: 36px;
+    color: white;
+    margin-left: -4px;
+    margin-top: 10px;
+    border: none;
+    background-color: #4e6ef2;
+    border-radius: 0px 10px 10px 0px;
+}
+
+button:hover {
+    outline: none;
+    background-color: #4662d9;
+}
+
+input {
+    border: 1px solid #4e6ef2;
+    width: 500px;
+    height: 36px;
+    margin-right: -1px;
+}
+
+/*关于部分*/
+#about {
+    font: 13px 'PingFang SC', Arial, 'Microsoft YaHei', sans-serif;
+    font-size: 13px;
+    padding-top: 200px;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    margin-left: -165.34px;
+}
+
+#about a {
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+/*版权部份*/
+#copyright {
+    color: gray;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -242.195px;
+}
+
+#copyright a {
+    color: gray;
+    margin-right: 5px;
+    padding-bottom: 100px;
+    text-decoration: none;
+}
